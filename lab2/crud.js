@@ -31,7 +31,7 @@ const addToCart = async (product) => {
 
   await saveCart(myCart);
 
-  console.log(`Product added/updated with id ${product.id} into cart`);
+  console.log(`Product added/updated with id ${product.id} into cart`);  
 };
 
 const showCart = async () => {
