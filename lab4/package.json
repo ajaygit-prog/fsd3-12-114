@@ -1,0 +1,17 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "lab4",
+  "license": "ISC",
+  "author": "Ajay Prakash Mishra",
+  "type": "module",
+  "main": "prg7.js",
+  "scripts": {
+    "start": "node app.js" ,
+    "dev" : "nodemon prg7.js"
+  
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

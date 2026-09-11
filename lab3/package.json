@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node prg3.js",
-    "dev": "nodemon prg6.js"
+    "dev": "nodemon prg7.js"
   },
   "keywords": [],
   "author": "",
