@@ -9,6 +9,9 @@ const f2 = () => {
 const f3 = () => {
   console.log("f3");
 };
+const f4 = ()=>{
+  console.log("f4") ;
+}
 
 function main() {
   console.log("main");
