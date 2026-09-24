@@ -1,11 +1,11 @@
 import http from "http";
-import { getUsers } from "./users.js" ;
-import {addUser} from "./users.js"
+import {getAllUsers , getUserById, deleteUser, updateUser , addUser} from "./users.js" ;
+
 
 const server = http.createServer((req, res) => {
   
   if ((req.url === "/api/users" && req.method === "GET")) {
-    res.end(JSON.stringify(getUsers()));
+    res.end(JSON.stringify(getAllUsers()));
   } 
   else if ((req.url === "/api/users" && req.method === "POST")) {
     let body = '';
@@ -24,6 +24,11 @@ const server = http.createServer((req, res) => {
   else if ((req.url.startsWith("/api/users/") && req.method === "GET")) {
 
     const userId = Number(req.url.split('/').pop())
+    const userFound = getUserById(userId);
+
+    if(!userFound){
+      res.end(JSON.stringify)
+    }
     res.end(JSON.stringify({msg : `showing details of user with id ${userId}`})) ;
     //res.end(JSON.stringify({ msg: "single user with id 1" }));
   } 

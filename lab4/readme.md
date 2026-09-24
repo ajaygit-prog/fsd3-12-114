@@ -37,3 +37,18 @@ script{
 
 
   ## dhannesh/fsd3-12     repo link
+
+
+  ## request type :
+  1. Get all , Get by ID 
+    Get : /api/products (to find all the products)
+    Get : /api/products/1 (to find the product whose ID is 1)
+  2. Post  
+    Post : /api/products (to send data to server)
+  3. Patch/Put 
+    Put/Patch : api/products/20
+  4. Delete 
+    Delete : api/products/20
+
+  ## Export :
+  exported function can be use any where by importing
