@@ -18,6 +18,11 @@ app.get("/" , (req,res) =>{
 });
 
 
+app.get("/about", (req,res)=>{
+    res.send("<h2> About page </h2>") ;
+}) ;
+
+
 
 app.listen(4444,()=> {
     console.log("prg1 is runnig at 4444") ;
