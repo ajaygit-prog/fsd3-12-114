@@ -4,8 +4,16 @@ const app = express() ;
 
 
 app.get("/" , (req,res) =>{
-    res.send("hello express") ;
+    //res.send("hello express") ;
     //res.send(`<h1>Hello Express</h1>`) 
+
+    res.send(
+      `
+        <h1>Hello Express</h1>
+        <h2>i am responding from express framework</h2>
+        <h3> the code is minimal and easy to run </h3>
+        `,
+    );
 
 });
 
