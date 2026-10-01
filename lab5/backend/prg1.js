@@ -23,6 +23,17 @@ app.get("/about", (req,res)=>{
 }) ;
 
 
+app.get("/products" , (req,res) =>{
+    const product ={
+        id :1 ,
+        name : "mobile" ,
+        price : 4000 ,
+
+    };
+    res.send(product) ;
+}) ;
+
+
 
 app.listen(4444,()=> {
     console.log("prg1 is runnig at 4444") ;

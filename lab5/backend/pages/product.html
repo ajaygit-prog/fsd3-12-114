@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Pizza</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff8f0;
+        }
+
+        /* Navbar */
+        nav {
+            height: 70px;
+            background-color: #e63946;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 0 40px;
+        }
+
+        nav h1 {
+            color: white;
+            font-size: 32px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin-left: 35px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Section */
+        .container {
+            min-height: calc(100vh - 70px);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 80px;
+            padding: 50px;
+        }
+
+        /* Image */
+        .food-image {
+            width: 450px;
+            height: 450px;
+
+            border-radius: 25px;
+            overflow: hidden;
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .food-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Product Details */
+        .details {
+            width: 500px;
+        }
+
+        .details h2 {
+            font-size: 48px;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        /* Rating */
+        .rating {
+            color: #f4a261;
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        .rating span {
+            color: #f4a261;
+            font-size: 18px;
+        }
+
+        /* Description */
+        .description {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Price */
+        .price {
+            font-size: 34px;
+            font-weight: bold;
+            color: #e63946;
+            margin-bottom: 25px;
+        }
+
+        .old-price {
+            font-size: 20px;
+            color: #999;
+            text-decoration: line-through;
+            margin-left: 15px;
+        }
+
+        /* Quantity */
+        .quantity {
+            margin-bottom: 25px;
+        }
+
+        .quantity label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .quantity input {
+            width: 70px;
+            padding: 10px;
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 17px;
+
+            background-color: #e63946;
+            color: white;
+
+            border: none;
+            border-radius: 12px;
+
+            font-size: 20px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c92f3b;
+        }
+
+        /* Features */
+        .features {
+            margin-top: 30px;
+        }
+
+        .features p {
+            font-size: 18px;
+            margin: 12px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+
+            .container {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .food-image {
+                width: 90%;
+                height: 350px;
+            }
+
+            .details {
+                width: 90%;
+            }
+
+            .details h2 {
+                font-size: 38px;
+            }
+
+            nav {
+                padding: 0 20px;
+            }
+
+            nav a {
+                margin-left: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <h1>Foodie 🍕</h1>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Product Section -->
+
+    <main class="container">
+
+        <!-- Food Image -->
+
+        <div class="food-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80"
+                alt="Cheesy Margherita Pizza">
+
+        </div>
+
+
+        <!-- Product Details -->
+
+        <div class="details">
+
+            <h2>
+                Cheesy Margherita Pizza
+            </h2>
+
+
+            <div class="rating">
+                ★★★★★
+                <span>(4.8)</span>
+            </div>
+
+
+            <p class="description">
+
+                Delicious cheesy Margherita pizza prepared with
+                fresh tomatoes, mozzarella cheese and our special
+                Italian herbs.
+
+            </p>
+
+
+            <div class="price">
+
+                ₹299
+
+                <span class="old-price">
+                    ₹399
+                </span>
+
+            </div>
+
+
+            <div class="quantity">
+
+                <label>
+                    Quantity:
+                </label>
+
+                <input
+                    type="number"
+                    value="1"
+                    min="1">
+
+            </div>
+
+
+            <button>
+                Add to Cart 🛒
+            </button>
+
+
+            <div class="features">
+
+                <p>🍅 Fresh Ingredients</p>
+
+                <p>🧀 100% Mozzarella Cheese</p>
+
+                <p>🔥 Freshly Baked</p>
+
+                <p>🚚 Fast Delivery</p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
