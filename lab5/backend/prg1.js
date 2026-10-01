@@ -5,7 +5,7 @@ const app = express() ;
 
 app.get("/" , (req,res) =>{
     res.send("hello express") ;
-    res.send(`<h1>Hello Express</h1>`) 
+    //res.send(`<h1>Hello Express</h1>`) 
 
 });
 
