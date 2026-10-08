@@ -42,3 +42,8 @@ app.listen(4444, () => {
   console.log("prg1 is running on port 4444");
 });
 ```
+
+
+## Static
+in express we can add any static html pages with the help of express.static()
+express support middleware , when we have to execute some functions before server execution then we use middleware app.use alwase apply to insert any middleware
