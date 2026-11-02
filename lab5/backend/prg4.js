@@ -7,7 +7,7 @@ const app = express() ;
 app.get('/api/products' ,(req,res) => {
     let sortedProducts = products.map(({name , image , price ,id})=> ({
         name,
-        image,
+        image ,
         price,
         id,
     })) ;
